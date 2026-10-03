@@ -1,0 +1,19 @@
+@import "./variables";
+@import "./mixins";
+
+.agenda-container {
+  @include card;
+
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 30px;
+
+  h2 {
+    color: $gold;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: $text-secondary;
+  }
+}

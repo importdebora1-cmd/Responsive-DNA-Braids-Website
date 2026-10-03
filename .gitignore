@@ -1,0 +1,20 @@
+/.plugins/
+/.opencode-skills/
+
+# Dependências
+node_modules/
+
+# Build
+dist/
+
+# Variáveis de ambiente
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+
+# Sistema operacional
+.DS_Store
+Thumbs.db

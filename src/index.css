@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+/* Esconde o menu de celular por padrão no computador */
+.mobile-nav {
+  display: none !important;
+}
+
+/* Quando a tela for menor que 768px (celulares e tablets pequenos) */
+@media (max-width: 768px) {
+  /* Esconde o menu do topo e o botão de agendar lateral */
+  .desktop-menu, header button {
+    display: none !important;
+  }
+  
+  /* Centraliza a logo no topo */
+  header {
+    justify-content: center !important;
+    padding: 15px !important;
+  }
+  
+  /* Mostra a barra de navegação estilo app no rodapé */
+  .mobile-nav {
+    display: flex !important;
+  }
+}
